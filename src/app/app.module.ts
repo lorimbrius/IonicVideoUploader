@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { Camera } from '@ionic-native/camera';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     ListPage
   ],
   providers: [
+    Camera,
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
